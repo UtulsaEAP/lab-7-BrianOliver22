@@ -6,15 +6,16 @@ def wordInRange():
     range_list = []
     with open(file_comp, 'r') as inputs:
         inputs = inputs.read().split()
-        lens = int(len(inputs))
+
         for i in range (len(inputs)):
             if (inputs[i]<= max_word):
                 if min_word >= min_word:
                     range_list.append(" - in range")
-            elif inputs[i] >= max_word:
+            elif inputs[i] > max_word:
                 range_list.append(" - not in range")
-            elif (inputs[i] <= max_word):
+            elif (inputs[i] < max_word):
                 range_list.append(" - not in range")
+
         for i in range(len(inputs)):
             print(inputs[i]+range_list[i])
     return
