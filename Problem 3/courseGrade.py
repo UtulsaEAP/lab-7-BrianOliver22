@@ -61,8 +61,8 @@ def courseGrade():
         final_average += int(final[i]) 
     final_average = final_average/len(first)
     for i in range(len(first)):
-        print(first[i] + "   " + last[i] + "   " + str(midterm1[i]) + "   " + str(midterm2[i]) + "   " + str(final[i]) + "   " + letter_grade[i])
-    print("Averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm1_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
+        print(first[i] + "  " + last[i] + " " + str(midterm1[i]) + "    " + str(midterm2[i]) + "    " + str(final[i]) + "   " + letter_grade[i])
+    print("\n" + "Averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm1_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
     return
 
 if __name__ == "__main__":
