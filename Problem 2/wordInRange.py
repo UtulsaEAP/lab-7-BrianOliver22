@@ -1,3 +1,7 @@
+""""
+name: Brian Oliver
+date: 3/7/2024 9:50
+"""
 def wordInRange():
     #Type your code here
     file_comp = str(input())
@@ -9,7 +13,7 @@ def wordInRange():
 
         for i in range (len(inputs)):
             if (inputs[i] <= max_word):
-                if min_word >= min_word:
+                if inputs[i] >= min_word:
                     range_list.append(" - in range")
                 elif inputs[i] < min_word:
                     range_list.append(" - not in range")

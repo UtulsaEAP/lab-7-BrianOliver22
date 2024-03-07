@@ -1,3 +1,7 @@
+""""
+name: Brian Oliver
+date: 3/6/2024 1:30
+"""
 def exceptionHandling():
     # Split input into 2 parts: name and age
     parts = input().split()
