@@ -5,7 +5,7 @@ date: 3/7/2024 12:00
 def courseGrade():
     
     # TODO: Declare any necessary variables here. 
-    file_comp = input()
+    file_comp = str(input())
     first = []
     last = []
     midterm1 = []
@@ -19,7 +19,8 @@ def courseGrade():
 
       
     # TODO: Read a file name from the user and read the tsv file here. 
-    with open("./Problem 3/"+ file_comp,'r') as inputs:
+    with open(file_comp,'r') as inputs:
+        "./Problem 3/"
         inputs = inputs.read().split()
         
         """"

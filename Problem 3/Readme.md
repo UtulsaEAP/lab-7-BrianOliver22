@@ -30,6 +30,8 @@ and the contents of StudentInfo.tsv are:
     Mayo    Tyrese  88  61  36
     Stern    Brenda  90  86  45
 
+
+
 the file report.txt should contain:
 
     Barrett    Edan    70  45  59  F
