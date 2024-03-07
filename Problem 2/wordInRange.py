@@ -4,7 +4,7 @@ def wordInRange():
     min_word = str(input())
     max_word = str(input())
     range_list = []
-    with open("./Problem 2/input1.txt", 'r') as inputs:
+    with open(file_comp, 'r') as inputs:
         inputs = inputs.read().split()
         lens = int(len(inputs))
         for i in range (len(inputs)):
