@@ -1,6 +1,21 @@
 def wordInRange():
     #Type your code here
-    input1.readlines
+    file_comp = str(input())
+    min_word = str(input())
+    max_word = str(input())
+    range_list = []
+    with open("./Problem 2/input1.txt", 'r') as inputs:
+        inputs = inputs.read().split()
+        for i in range len(inputs):
+            if (inputs[i]<= max_word):
+                if min_word >= min_word:
+                    range_list.append(" - in range")
+            elif inputs[i] >= max_word:
+                range_list.append(" - not in range")
+            elif (inputs[i] <= max_word):
+                range_list.append(" - not in range")
+        for i in range len()
+        print(inputs)
     return
 if __name__ == '__main__':
     wordInRange()
