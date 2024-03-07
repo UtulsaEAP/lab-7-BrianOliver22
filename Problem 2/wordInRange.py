@@ -8,9 +8,11 @@ def wordInRange():
         inputs = inputs.read().split()
 
         for i in range (len(inputs)):
-            if (inputs[i]<= max_word):
+            if (inputs[i] <= max_word):
                 if min_word >= min_word:
                     range_list.append(" - in range")
+                elif inputs[i] < max_word:
+                    range_list.append(" - not in range")
             elif inputs[i] > max_word:
                 range_list.append(" - not in range")
             elif (inputs[i] < max_word):
