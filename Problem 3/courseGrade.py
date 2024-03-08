@@ -16,17 +16,23 @@ def courseGrade():
     midterm1_avg = 0
     midterm2_avg = 0
     final_average = 0
-
+    num = file_comp.split("fo")
+    num2 = num[1].split(".")
+    if num2[0] == "":
+        num3 = ""
+    elif num2[0] == "2":
+        num3 = "2"
+    elif num2[0] == "1":
+        num3 = "1"
+    else:
+        num3 = "error"
       
     # TODO: Read a file name from the user and read the tsv file here. 
     with open(file_comp,'r') as inputs:
         "./Problem 3/"
         inputs = inputs.read().split()
         
-        """"
-        print(input_len)
-        print(inputs)
-        """
+        
     
         for i in range(0,int(len(inputs)),5):
             first.append(inputs[i])
@@ -60,12 +66,14 @@ def courseGrade():
     for i in range(len(first)):
         final_average += int(final[i]) 
     final_average = final_average/len(first)
-    for i in range(len(first)):
-        print(first[i] + "  " + last[i] + " " + str(midterm1[i]) + "    " + str(midterm2[i]) + "    " + str(final[i]) + "   " + letter_grade[i])
-    print("\n" + "Averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm1_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
+    with open("./Problem 3/report"+num3+".txt",'w+') as file:
+        for i in range(len(first)):
+            file.write( first[i] + "\t" + last[i] + "\t" + str(midterm1[i]) + "\t" + str(midterm2[i]) + "\t" + str(final[i]) + "\t" + letter_grade[i]+"\n")
+        file.write("\n" + "averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm1_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
+        file.close()
+    
     return
 
 if __name__ == "__main__":
-    courseGrade()
-    
+    courseGrade()    
     

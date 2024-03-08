@@ -26,6 +26,8 @@ class TestClass:
 
                 "Averages: midterm1 83.40, midterm2 76.60, final 61.60"]), ERROR_MSG
             
+            
+            
     def test_two(self,monkeypatch,capsys):
 
         # monkeypatch the "input" function, so that it returns "Mark".
