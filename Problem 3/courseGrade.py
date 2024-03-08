@@ -1,9 +1,8 @@
 """"
 name: Brian Oliver
-date: 3/7/2024 12:00
+date: 3/7/2024 7:00
 """
-def courseGrade():
-    
+def courseGrade():    
     # TODO: Declare any necessary variables here. 
     file_comp = str(input())
     first = []
@@ -28,10 +27,9 @@ def courseGrade():
         num3 = "error"
       
     # TODO: Read a file name from the user and read the tsv file here. 
-    with open(file_comp,'r') as inputs:
+    with open(file_comp,"r") as inputs:
         "./Problem 3/"
         inputs = inputs.read().split()
-        
         
     
         for i in range(0,int(len(inputs)),5):
@@ -69,7 +67,7 @@ def courseGrade():
     with open("./Problem 3/report"+num3+".txt",'w+') as file:
         for i in range(len(first)):
             file.write( first[i] + "\t" + last[i] + "\t" + str(midterm1[i]) + "\t" + str(midterm2[i]) + "\t" + str(final[i]) + "\t" + letter_grade[i]+"\n")
-        file.write("\n" + "averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm1_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
+        file.write("\n" + "Averages: midterm1 " + str(f'{midterm1_avg:.2f}') + ", midterm2 " + str(f'{midterm2_avg:.2f}') + ", final " + str(f'{final_average:.2f}'))
         file.close()
     
     return

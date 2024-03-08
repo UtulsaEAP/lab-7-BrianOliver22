@@ -4,4 +4,4 @@ Charlton	Caius	73	94	80	B
 Mayo	Tyrese	88	61	36	D
 Stern	Brenda	90	86	45	C
 
-averages: midterm1 83.40, midterm2 83.40, final 61.60
+Averages: midterm1 83.40, midterm2 76.60, final 61.60
